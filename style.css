@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Courier New", Courier, monospace;
+  /* background-color: purple; */
+  /* margin: 20px; */
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  position: fixed;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 1;
+}
+header div img {
+  border-radius: 50%;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 55px;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+.contact {
+  background-color: #ce7636;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+.globalAccueil {
+  position: absolute;
+  top: 300px;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  width: 70vw;
+}
+#acceuil {
+  background-color: #ce7636;
+  color: white;
+  position: relative;
+}
+#acceuil img {
+  background-color: #ce7636;
+  opacity: 0.3;
+  max-width: 100%;
+  height: auto;
+}
+#acceuil h1 {
+  font-size: 55px;
+  width: 100%;
+  font-weight: 700;
+}
+
+.btn {
+  display: flex;
+  gap: 48px;
+}
+.btn button {
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+.btn-1 {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-2 {
+  background-color: white;
+  color: #ce7636;
+  border: none;
+}
