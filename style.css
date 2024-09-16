@@ -1,10 +1,16 @@
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 74px;
   font-family: "Courier New", Courier, monospace;
-  /* background-color: purple; */
-  /* margin: 20px; */
+  width: 100%;
 }
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -46,6 +52,7 @@ header ul li a {
   width: 70vw;
 }
 #acceuil {
+  width: 100%;
   background-color: #ce7636;
   color: white;
   position: relative;
@@ -54,7 +61,8 @@ header ul li a {
   background-color: #ce7636;
   opacity: 0.3;
   max-width: 100%;
-  height: auto;
+  height: 800px;
+  object-fit: cover;
 }
 #acceuil h1 {
   font-size: 55px;
@@ -81,3 +89,76 @@ header ul li a {
   color: #ce7636;
   border: none;
 }
+.btn-1:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+  color: white;
+  transition: 1s;
+}
+
+.btn-2:hover {
+  background-color: #ce7636;
+  color: white;
+  transition: 1s;
+}
+
+/***** SECTION SERVICE *****/
+
+#service {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 24px;
+}
+
+#service img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  opacity: 0.5;
+}
+.image {
+  background-color: rgb(206, 118, 54, 0.6);
+}
+.imgService {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+/***** SECTION A PROPOS *****/
+
+#apropos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  width: 80vw;
+}
+
+#apropos img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+#apropos p {
+  font-weight: 500;
+}
+.colRight {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.colRight button {
+  padding: 12px 0;
+  width: 10vw;
+  background-color: #ce7636;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+/***** SECTION CONTACT *****/

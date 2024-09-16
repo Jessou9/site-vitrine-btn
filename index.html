@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
+    <!-- <header>
       <div>
         <img
           class="logo"
@@ -27,10 +27,15 @@
           <li class="contact"><a href="/">Nous contacter</a></li>
         </ul>
       </div>
-    </header>
-    <section id="acceuil">
+    </header> -->
+    <!-- <section id="acceuil">
       <div>
-        <img src="image/accueil.jpg" alt="image d'acceuil" />
+        <img
+          src="image/accueil.jpg"
+          alt="image d'acceuil"
+          width="100%"
+          height="100%"
+        />
       </div>
       <div class="globalAccueil">
         <h1>
@@ -43,17 +48,45 @@
         </div>
       </div>
     </section>
-    <!-- <section id="service">
+    <section id="service">
       <h2>Nos prestations</h2>
-      <img src="image/service1.jpg" alt="service 1" />
-      <img src="image/service2.jpg" alt="service 2" />
-      <img src="image/service3.jpg" alt="servce 3" />
+      <div class="imgService">
+        <div class="image">
+          <img
+            src="image/service1.jpg"
+            alt="service 1"
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="image/service2.jpg"
+            alt="service 2"
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="image/service3.jpg"
+            alt="servce 3"
+            width="100%"
+            height="100%"
+          />
+        </div>
+      </div>
     </section>
     <section id="apropos">
-      <div>
-        <img src="image/plan.jpg" alt="A propos de nous" />
+      <div imgAbout>
+        <img
+          src="image/plan.jpg"
+          alt="A propos de nous"
+          width="100%"
+          height="100%"
+        />
       </div>
-      <div>
+      <div class="colRight">
         <h2>Titre à propos</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat autem
@@ -66,12 +99,14 @@
         </p>
         <button>Nous contacter</button>
       </div>
-    </section>
+    </section> -->
     <section id="contact">
       <h2>Formulaire de contact</h2>
       <form action="POST">
-        <input type="text" placeholder="Prénom" />
-        <input type="text" placeholder="Nom" />
+        <div>
+          <input type="text" placeholder="Prénom" />
+          <input type="text" placeholder="Nom" />
+        </div>
         <input type="text" placeholder="Email" />
         <textarea
           name="message"
@@ -113,6 +148,6 @@
           </li>
         </ul>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
