@@ -2,14 +2,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 74px;
   font-family: "Courier New", Courier, monospace;
   width: 100%;
 }
 #apropos,
 #service,
 #contact {
-  /* padding: 74px; */
+  padding: 74px;
 }
 h2 {
   font-size: 48px;
@@ -125,6 +124,11 @@ header ul li a {
   height: 100%;
   overflow: hidden;
 }
+.image p {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
 
 #service img {
   width: 385px;
@@ -134,6 +138,7 @@ header ul li a {
 }
 .image {
   background-color: rgb(206, 118, 54, 0.6);
+  border-radius: 0 0 8px 8px;
 }
 .imgService {
   display: flex;
@@ -181,7 +186,7 @@ header ul li a {
 /***** SECTION CONTACT *****/
 
 #contact {
-  width: 100%;
+  width: 90%;
   background-color: #ce7636;
   display: flex;
   flex-direction: column;
@@ -207,6 +212,11 @@ header ul li a {
 #contact input {
   padding: 12px 24px;
   border: none;
+  border-radius: 4px;
+}
+textarea {
+  border: none;
+  border-radius: 4;
 }
 .btnForm input {
   padding: 12px 24px;
@@ -279,13 +289,21 @@ footer li {
   border: none;
   border-radius: 4px;
 }
+
 .imgContact {
-  width: 100%;
-}
-.imgContact img {
+  position: relative;
   width: 100%;
   height: 300px;
   object-fit: cover;
+}
+.imgContact {
+  width: 100%;
+  height: 300px;
+  background-image: url(image/imgContact.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .tailleReseau img {
   width: 30px;
