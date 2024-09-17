@@ -82,25 +82,36 @@
     </section>
     <section id="contact">
       <h2>Formulaire de contact</h2>
-      <form action="POST">
-        <label for="name">Nom</label>
-        <input type="text" placeholder="Prénom" />
-        <label for="lastname">Prénom</label>
-        <input type="text" placeholder="Nom" />
-        <label for="email">E-mail</label>
-        <input type="text" placeholder="Email" />
-        <label for="message">Message</label>
-        <textarea
-          name="message"
-          id="message"
-          placeholder="Message"
-          cols="70"
-          rows="8"
-        ></textarea>
-        <div class="btnForm">
-          <input type="submit" value="Envoyer" />
-        </div>
-      </form>
+      <div class="rowsForm">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.375383447169!2d2.539487076626828!3d48.96537829317116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e614311cd5e1cb%3A0xe29455438e0c3b92!2s41%20All.%20Antoine%20de%20Saint-Exup%C3%A9ry%2C%2093420%20Villepinte!5e0!3m2!1sfr!2sfr!4v1726581563998!5m2!1sfr!2sfr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <form action="POST">
+          <label for="name">Nom</label>
+          <input type="text" placeholder="Prénom" />
+          <label for="lastname">Prénom</label>
+          <input type="text" placeholder="Nom" />
+          <label for="email">E-mail</label>
+          <input type="text" placeholder="Email" />
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message"
+            cols="70"
+            rows="8"
+          ></textarea>
+          <div class="btnForm">
+            <input type="submit" value="Envoyer" />
+          </div>
+        </form>
+      </div>
     </section>
     <div class="imgContact"></div>
 
@@ -110,26 +121,34 @@
           <img src="image/btp renov’.png" alt="logo" />
         </div>
         <div class="tailleReseau">
-          <img src="image/icons8-facebook-nouveau.svg" alt="lien facebook" />
-          <img src="image/icons8-instagram (1).svg" alt="lien instagram" />
-          <img src="image/icons8-youtube.svg" alt="lien youtube" />
+          <a href="">
+            <img src="image/icons8-facebook-nouveau.svg" alt="lien facebook" />
+          </a>
+
+          <a href="">
+            <img src="image/icons8-instagram (1).svg" alt="lien instagram" />
+          </a>
+
+          <a href="">
+            <img src="image/icons8-youtube.svg" alt="lien youtube" />
+          </a>
         </div>
       </div>
       <div class="colPageFooter">
         <h3>Pages</h3>
         <ul>
-          <li>Acceuil</li>
-          <li>Service</li>
-          <li>Contact</li>
-          <li>Qui sommes-nous</li>
+          <li><a href="#">Acceuil</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Qui sommes-nous</a></li>
         </ul>
       </div>
       <div class="colPageLegales">
         <h3>Pages légales</h3>
         <ul>
-          <li>Mentions légales</li>
-          <li>Politiques de confidentialité</li>
-          <li>NEWSLETTERS</li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Politiques de confidentialité</a></li>
+          <li><a href="#">NEWSLETTERS</a></li>
           <li class="newsletters">
             <input type="text" name="mail" id="" placeholder="Adresse mail" />
             <input class="btnNewsletter" type="submit" value="Soumettre" />
