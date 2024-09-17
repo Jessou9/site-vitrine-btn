@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- <header>
+    <header>
       <div>
         <img
           class="logo"
@@ -27,15 +27,10 @@
           <li class="contact"><a href="/">Nous contacter</a></li>
         </ul>
       </div>
-    </header> -->
-    <!-- <section id="acceuil">
+    </header>
+    <section id="acceuil">
       <div>
-        <img
-          src="image/accueil.jpg"
-          alt="image d'acceuil"
-          width="100%"
-          height="100%"
-        />
+        <img src="image/accueil.jpg" alt="image d'acceuil" />
       </div>
       <div class="globalAccueil">
         <h1>
@@ -48,43 +43,10 @@
         </div>
       </div>
     </section>
-    <section id="service">
-      <h2>Nos prestations</h2>
-      <div class="imgService">
-        <div class="image">
-          <img
-            src="image/service1.jpg"
-            alt="service 1"
-            width="100%"
-            height="100%"
-          />
-        </div>
-        <div class="image">
-          <img
-            src="image/service2.jpg"
-            alt="service 2"
-            width="100%"
-            height="100%"
-          />
-        </div>
-        <div class="image">
-          <img
-            src="image/service3.jpg"
-            alt="servce 3"
-            width="100%"
-            height="100%"
-          />
-        </div>
-      </div>
-    </section>
+
     <section id="apropos">
       <div imgAbout>
-        <img
-          src="image/plan.jpg"
-          alt="A propos de nous"
-          width="100%"
-          height="100%"
-        />
+        <img src="image/plan.jpg" alt="A propos de nous" />
       </div>
       <div class="colRight">
         <h2>Titre à propos</h2>
@@ -99,15 +61,32 @@
         </p>
         <button>Nous contacter</button>
       </div>
-    </section> -->
+    </section>
+    <section id="service">
+      <h2>Nos prestations</h2>
+      <div class="imgService">
+        <div class="image">
+          <img src="image/service1.jpg" alt="service 1" />
+        </div>
+        <div class="image">
+          <img src="image/service2.jpg" alt="service 2" />
+        </div>
+        <div class="image">
+          <img src="image/service3.jpg" alt="servce 3" />
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <h2>Formulaire de contact</h2>
       <form action="POST">
-        <div>
-          <input type="text" placeholder="Prénom" />
-          <input type="text" placeholder="Nom" />
-        </div>
+        <label for="name">Nom</label>
+        <input type="text" placeholder="Prénom" />
+        <label for="lastname">Prénom</label>
+        <input type="text" placeholder="Nom" />
+        <label for="email">E-mail</label>
         <input type="text" placeholder="Email" />
+        <label for="message">Message</label>
         <textarea
           name="message"
           id="message"
@@ -115,9 +94,12 @@
           cols="70"
           rows="8"
         ></textarea>
+        <div class="btnForm">
+          <input type="submit" value="Envoyer" />
+        </div>
       </form>
     </section>
-    <footer>
+    <!-- <footer>
       <div>
         <div>
           <img src="image/btp renov’.png" alt="logo" />
@@ -148,6 +130,6 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
