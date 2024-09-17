@@ -16,16 +16,24 @@ h2 {
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80vw;
+  width: 100vw;
+  height: 10vh;
   position: fixed;
-  top: -20px;
+  top: -30px;
   left: 50%;
   transform: translate(-50%, 50%);
   z-index: 1;
+  background-color: rgb(206, 118, 54, 0.5);
 }
+.bgcHeader {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+}
+
 header div img {
   border-radius: 50%;
 }
@@ -214,10 +222,12 @@ header ul li a {
   border: none;
   border-radius: 4px;
 }
+
 textarea {
   border: none;
   border-radius: 4;
 }
+
 .btnForm input {
   padding: 12px 24px;
   background-color: white;
